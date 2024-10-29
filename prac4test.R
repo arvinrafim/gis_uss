@@ -22,5 +22,5 @@ library(tmap)
 library(tmaptools)
 tmap_mode("plot")
 tm_shape(world) + 
-  tm_polygons("Difference", palette = "Reds"  , n=3) +
+  tm_polygons("Difference", palette = "Reds"  , midpoint=0) +
   tm_layout(legend.outside = TRUE)
